@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projeto - Catalog Leads</title>
+
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/header.css">
+    <link rel="stylesheet" href="../../../css/hero.css">
+    <link rel="stylesheet" href="../../../css/sobre.css">
+    <link rel="stylesheet" href="../../../css/portfolio.css">
+    <link rel="stylesheet" href="../../../css/contato.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container cabecalho__conteudo">
+
+            <a href="#" class="logo">
+                Wallace <span></span>
+            </a>
+
+            <nav class="menu" id="menu">
+                <a href="/index.html#portifolio">Portfólio</a>
+            </nav>
+
+            <button class="botao-menu" id="botao-menu" aria-label="Abrir menu" type="button">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <div class="container hero__conteudo">
+
+                <div class="hero__texto">
+
+                    <h1>Nome do Projeto</h1>
+
+                    <h2>
+                        Sub
+                        <strong>Titulo</strong> 
+                    </h2>
+
+                    <p class="hero__descricao">
+                        Resumo do projeto
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="container sobre__conteudo">
+
+                <div class="sobre__texto">
+                    <p class="tag">Sobre mim</p>
+
+                    <h2>
+                        Desenvolvedor 
+                        <span>backend & Mobile</span>.
+                    </h2>
+
+                    <p>
+                        Desenvolvedor Backend Júnior e estudante de Sistemas de Informação, com foco no desenvolvimento de APIs REST e arquitetura backend utilizando TypeScript, Node.js e NestJS.
+
+                        Desenvolvo projetos práticos com PostgreSQL, Prisma, autenticação e autorização com JWT, validação de dados, documentação de APIs com Swagger e testes automatizados. Também aplico práticas de segurança como rate limiting, Helmet e hash seguro de credenciais.
+
+                        Tenho experiência prática na integração entre APIs e bancos de dados, organização modular de aplicações, controle de acesso e desenvolvimento de soluções voltadas a problemas reais.
+
+                        Busco oportunidade como Desenvolvedor Backend Júnior ou Estagiário em Desenvolvimento de Software, contribuindo com a construção de sistemas seguros, organizados e escaláveis.
+
+                    </p>
+
+                    <div class="sobre__destaques">
+                        <div class="sobre__destaque">
+                            <strong>02+</strong>
+                            <span>Ano de estudo prático</span>
+                        </div>
+
+                        <div class="sobre__destaque">
+                            <strong>04+</strong>
+                            <span>Projetos em desenvolvimento</span>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="sobre__info">
+                    <h3>Informações</h3>
+
+                    <div class="sobre__info-lista">
+                        <div class="sobre__info-item">
+                            <strong>Nome</strong>
+                            <span>Wallace Monsores</span>
+                        </div>
+
+                        <div class="sobre__info-item">
+                            <strong>Formação</strong>
+                            <span>Sistemas de Informação</span>
+                        </div>
+
+                        <div class="sobre__info-item">
+                            <strong>Objetivo</strong>
+                            <span>Estágio ou vaga júnior</span>
+                        </div>
+
+                        <div class="sobre__info-item">
+                            <strong>Foco técnico</strong>
+                            <span>Backend, APIs REST e Apps Mobile</span>
+                        </div>
+
+                        <div class="sobre__info-item">
+                            <strong>Localização</strong>
+                            <span>Brasil</span>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+
+                <div class="secao-titulo">
+                    <p class="tag">Meu portfólio</p>
+                    <h2>Projetos, certificados e stack tecnológica</h2>
+                </div>
+
+                <div class="portfolio__abas">
+                    <button class="aba ativa" data-aba="projetos">Projetos</button>
+                    <button class="aba" data-aba="certificados">Certificados</button>
+                    <button class="aba" data-aba="stack">Stack</button>
+                </div>
+
+                <!-- PROJETOS -->
+                <div class="portfolio__conteudo ativo" id="projetos">
+                    <div class="projetos-grid">
+
+                        <!--App Checklist -->
+                        <article class="projeto-card">
+                            <div class="projeto-card__imagem">
+                                <img src="assets/img/projetos/checklist.png" alt="Sistema de checklist ">
+                            </div>
+
+                            <div class="projeto-card__conteudo">
+                                <h3>App Checklist </h3>
+
+                                <p>
+                                    Sistema para gerenciamento e execução de checklists, com múltiplas lojas, funcionários, cargos, turnos, evidências fotográficas e painel administrativo responsivo.
+                                </p>
+
+                                <div class="projeto-card__tecnologias">
+                                    <span>React</span>
+                                    <span>Vite</span>
+                                    <span>TypeScript</span>
+                                    <span>NestJS</span>
+                                    <span>Prisma</span>
+                                    <span>PostgreSQL</span>
+                                    <span>Supabase </span>
+                                </div>
+
+                                <div class="projeto-card__botoes" id="projeto-checklist">
+                                    <button onclick="verProjeto('projeto-checklist')">Ver projeto</button>
+                                    <a href="#" target="_blank">GitHub</a>
+                                </div>
+                            </div>
+
+                            <!--Catalogo de Produtos-->
+                            
+                        </article>
+
+                        <!--Catalogo de Produtos-->
+                        <article class="projeto-card">
+                            <div class="projeto-card__imagem">
+                                <img src="assets/img/projetos/checklist.png" alt="Catalogo de Produtos">
+                            </div>
+
+                            <div class="projeto-card__conteudo">
+                                <h3>Catalogo de Produtos</h3>
+
+                                <p>
+                                    ....
+                                </p>
+
+                                <div class="projeto-card__tecnologias">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="projeto-card__botoes">
+                                    <a href="#" target="_blank">Ver projeto</a>
+                                    <a href="#" target="_blank">GitHub</a>
+                                </div>
+                            </div>
+
+                            <!--Catalogo de Produtos-->
+                            
+                        </article>
+                    </div>
+                </div>
+
+                <!-- CERTIFICADOS -->
+                <div class="portfolio__conteudo" id="certificados">
+                    <div class="certificados-grid">
+
+                        <article class="certificado-card">
+                            <img src="assets/img/certificados/certificado-1.png" alt="Certificado de programação">
+
+                            <div class="certificado-card__conteudo">
+                                <h3>Curso técnico de TI - Faetec</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- STACK -->
+                <div class="portfolio__conteudo" id="stack">
+                    <div class="stack-blocos">
+
+                        <article class="stack-bloco">
+                            <h3>Frontend</h3>
+
+                            <div class="stack-itens">
+                                <div class="stack-item">
+                                    <img src="assets/img/tecnologias/html-5.png" alt="HTML">
+                                    <span>HTML</span>
+                                </div>
+
+                                <div class="stack-item">
+                                    <img src="assets/img/tecnologias/css-3.png" alt="CSS">
+                                    <span>CSS</span>
+                                </div>
+
+                                <div class="stack-item">
+                                    <img src="assets/img/tecnologias/React.png" alt="React">
+                                    <span>React</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="stack-bloco">
+                            <h3>Backend</h3>
+
+                            <div class="stack-itens">
+                                <div class="stack-item">
+                                    <img src="assets/img/tecnologias/node_js.png" alt="Node.js">
+                                    <span>Node.js</span>
+                                </div>
+
+                                <div class="stack-item">
+                                    <img src="assets/img/tecnologias/postgre.png" alt="PostgreSQL">
+                                    <span>PostgreSQL</span>
+                                </div>
+
+                                 <div class="stack-item">
+                                    <img src="assets/img/tecnologias/nestjs.png" alt="CSS">
+                                    <span>Nest</span>
+                                </div>
+
+                                <div class="stack-item">
+                                    <img src="assets/img/tecnologias/typescript.png" alt="typescript">
+                                    <span>TypeScript</span>
+                                </div>
+
+                                
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <div class="container contato__conteudo">
+
+                <div class="contato__info">
+                    <p class="tag">Contato</p>
+
+                    <h2>Vamos conversar?</h2>
+
+                    <p>
+                        Estou em busca de oportunidades de estágio, vaga júnior
+
+                    </p>
+
+                    <div class="contato__cards">
+                        <div class="contato__card">
+                            <strong>E-mail</strong>
+                            <span>wallace.monsores.rj@gmail.com</span>
+                        </div>
+            
+
+                        <div class="contato__card">
+                            <strong>GitHub</strong>
+                            <span><a href="https://github.com/wallace-d3v">wallace.d3v</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="formulario-contato" action="https://formsubmit.co/wallace.monsores.rj@gmail.com"
+                    method="POST">
+
+                    <input type="hidden" name="_subject" value="Nova mensagem pelo portfólio">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <h3>Envie uma mensagem</h3>
+
+                    <div class="campo">
+                        <input type="text" name="nome" placeholder="Seu nome" aria-label="Seu nome" autocomplete="name" required>
+                    </div>
+
+                    <div class="campo">
+                        <input type="email" name="email" placeholder="Seu e-mail" aria-label="Seu e-mail" autocomplete="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <textarea name="mensagem" placeholder="Sua mensagem" aria-label="Sua mensagem" required></textarea>
+                    </div>
+
+                    <button type="submit" class="botao botao--principal">
+                        Enviar mensagem
+                    </button>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape__conteudo">
+            <p>© 2026 Wallace Monsores Todos os direitos reservados.</p>
+            <p>Feito com código.</p>
+        </div>
+    </footer>
+
+    <script src="js/menu-mobile.js"></script>
+    <script src="js/abas-portfolio.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
