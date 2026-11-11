@@ -165,3 +165,14 @@ button {
 section {
   padding: 70px 0;
 }
+.botao--indisponivel {
+  color: var(--cor-texto-fraca);
+  border: 1px solid var(--cor-borda);
+  background: rgba(255, 255, 255, 0.03);
+  cursor: default;
+}
+
+:where(a, button, input, textarea):focus-visible {
+  outline: 3px solid var(--cor-roxa-clara);
+  outline-offset: 4px;
+}

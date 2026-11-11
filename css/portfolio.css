@@ -268,3 +268,18 @@
 .stack-item span {
   display: none;
 }
+
+/* Apresentação sem depender de uma captura ainda não disponível. */
+.projeto-card__ilustracao {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: radial-gradient(ellipse at top, rgba(139, 61, 255, .3), transparent 80%);
+}
+.projeto-card__ilustracao > span { color: #bcf5d3; font-size: 2.5rem; line-height: 1; }
+.projeto-card__ilustracao strong { font-size: 1.25rem; }
+.projeto-card__ilustracao small, .certificado-card__pendente { color: var(--cor-texto-suave); }
+.certificado-card__pendente { min-height: 160px; display: grid; place-items: center; background: var(--cor-card-clara); }

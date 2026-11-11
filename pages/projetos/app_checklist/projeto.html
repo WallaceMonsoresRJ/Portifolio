@@ -1,36 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos</title>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/contato.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/responsivo.css">
+    <meta name="description" content="Sistema para gerenciamento e execução de checklists, com múltiplas lojas, funcionários, cargos, turnos e evidências fotográficas.">
+    <title>App Checklist | Wallace Monsores</title>
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/header.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="stylesheet" href="../../../css/responsivo.css">
+    <link rel="stylesheet" href="../../../css/projeto.css">
 </head>
 <body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
     <header class="cabecalho">
         <div class="container cabecalho__conteudo">
-
-            <a href="#" class="logo">
-                Wallace Monsores<span></span>
-            </a>
-
-            <nav class="menu" id="menu">
-                <a href="#inicio">Início</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#portfolio">Portfólio</a>
-                <a href="#contato">Contato</a>
+            <a href="../../../index.html" class="logo">Wallace Monsores<span>.</span></a>
+            <nav class="menu" id="menu" aria-label="Navegação principal">
+                <a href="../../../index.html#portfolio">Portfólio</a>
+                <a href="#funcionalidades">Funcionalidades</a>
+                <a href="../../../index.html#contato">Contato</a>
             </nav>
-
-            <button class="botao-menu" id="botao-menu" aria-label="Abrir menu" type="button">
-                ☰
-            </button>
-
+            <button class="botao-menu" id="botao-menu" aria-label="Abrir menu" aria-controls="menu" type="button">☰</button>
         </div>
     </header>
+    <main id="conteudo">
+        <section class="projeto-abertura" aria-labelledby="titulo-projeto">
+            <div class="container">
+                <nav class="projeto-migalhas" aria-label="Localização"><a href="../../../index.html#portfolio">Projetos</a><span aria-hidden="true">/</span><span aria-current="page">App Checklist</span></nav>
+                <div class="projeto-apresentacao">
+                    <div>
+                        <p class="tag">Gestão operacional</p>
+                        <h1 id="titulo-projeto">App Checklist</h1>
+                        <p class="projeto-chamada">Checklists organizados. Rotinas acompanhadas.</p>
+                        <p class="projeto-descricao">Sistema para gerenciamento e execução de checklists, com múltiplas lojas, funcionários, cargos, turnos e evidências fotográficas.</p>
+                        <div class="projeto-acoes">
+                            <a class="botao botao--principal" href="https://lime-cassowary-677582.hostingersite.com/" target="_blank" rel="noopener noreferrer">Acessar projeto <span aria-hidden="true">↗</span><span class="somente-leitor"> (abre em nova aba)</span></a>
+                            <a class="botao botao--secundario" href="#visao-geral">Conhecer os detalhes <span aria-hidden="true">↓</span></a>
+                        </div>
+                    </div>
+                    <div class="checklist-preview" role="img" aria-label="Ilustração de uma lista de tarefas; não é uma captura do sistema"><div class="checklist-preview__top"><span>ROTINA DA LOJA</span><span aria-hidden="true">•••</span></div><h2>Checklist do turno</h2><p>Organização em cada etapa.</p><div class="checklist-preview__item"><span aria-hidden="true">✓</span> Conferir os materiais</div><div class="checklist-preview__item"><span aria-hidden="true">✓</span> Preparar o ambiente</div><div class="checklist-preview__item checklist-preview__item--pendente"><span aria-hidden="true">○</span> Registrar a execução</div><div class="checklist-preview__progress"><span></span></div><small>Ilustração do conceito do projeto</small></div>
+                </div>
+            </div>
+        </section>
+        <section id="visao-geral" class="projeto-visao" aria-labelledby="titulo-visao">
+            <div class="container projeto-visao__grid">
+                <div><p class="tag">Visão geral</p><h2 id="titulo-visao">Sobre o projeto</h2><p>Acompanhar rotinas em diferentes lojas exige organizar responsáveis, turnos e registros de execução. O App Checklist reúne essas informações em um sistema com painel administrativo responsivo.</p></div>
+                <aside class="projeto-stack" aria-labelledby="titulo-stack"><h2 id="titulo-stack">Tecnologias utilizadas</h2><ul><li>React</li><li>TypeScript</li><li>NestJS</li><li>Prisma</li><li>PostgreSQL</li><li>Supabase</li></ul></aside>
+            </div>
+        </section>
+        <section id="funcionalidades" aria-labelledby="titulo-funcionalidades">
+            <div class="container"><p class="tag">Por dentro do projeto</p><h2 id="titulo-funcionalidades">Funcionalidades e estrutura</h2><div class="projeto-funcionalidades"><article class="projeto-funcionalidade"><span class="projeto-numero">01</span><h3>Múltiplas lojas</h3><p>Organização das rotinas por unidade.</p></article><article class="projeto-funcionalidade"><span class="projeto-numero">02</span><h3>Equipe e turnos</h3><p>Gerenciamento de funcionários, cargos e turnos.</p></article><article class="projeto-funcionalidade"><span class="projeto-numero">03</span><h3>Checklists</h3><p>Gerenciamento e execução das tarefas de cada rotina.</p></article><article class="projeto-funcionalidade"><span class="projeto-numero">04</span><h3>Evidências fotográficas</h3><p>Registro de imagens para acompanhar a execução.</p></article></div></div>
+        </section>
+        <section class="projeto-proximo" aria-labelledby="titulo-proximo"><div class="container projeto-proximo__conteudo"><div><p class="tag">Continue explorando</p><h2 id="titulo-proximo">Conheça também: Catalog Leads</h2></div><a class="botao botao--secundario" href="../catalog_leads/projeto.html">Ver projeto <span aria-hidden="true">→</span></a></div></section>
+    </main>
+    <footer class="rodape"><div class="container rodape__conteudo"><p>© 2026 Wallace Monsores</p><a href="../../../index.html#portfolio">← Voltar ao portfólio</a></div></footer>
+    <script src="../../../js/menu-mobile.js"></script>
 </body>
 </html>
